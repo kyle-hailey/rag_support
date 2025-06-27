@@ -1,0 +1,28 @@
+## Source: Slack
+### Channel: #engineering
+### Date: 2024-05-14
+### Topic: OAuth Integration Blocking Feature ABC-123
+
+[10:32 AM] alice:
+Hey, just a heads up — the deployment failed last night. Looks like we're missing the `OAUTH_REDIRECT_URI` env var on staging.
+
+[10:34 AM] bob:
+Yeah, I noticed that too. I think it’s related to the new login flow we merged.
+
+[10:36 AM] alice:
+Could be. Also, Jira ticket ABC-123 is blocked until this is fixed.
+
+[10:38 AM] carol:
+Just talked to the auth team. They’re still waiting on a security review before they can finalize the config.
+
+[10:40 AM] bob:
+Ugh. So we’re bottlenecked on that. Anyone know when the review is happening?
+
+[10:42 AM] carol:
+Tentatively tomorrow. I’ll ping them again and update the ticket.
+
+[10:45 AM] alice:
+Thanks. Just noting it here so we have a paper trail in case the client follows up.
+
+### Summary:
+Feature ABC-123 is blocked due to a missing OAuth environment variable and an unresolved security review on the login flow. The auth team is the current dependency.

@@ -1,0 +1,23 @@
+### Source: Zendesk
+### Ticket ID: #789
+### Subject: SSO Login Failing for Enterprise Users
+### Created: 2024-05-12
+### Status: Escalated to Engineering
+### Customer: Acme Corp
+
+#### Description:
+Customer reports that SSO login redirects them to a blank page after authentication.
+
+#### Customer Comments:
+- [2024-05-12, John from Acme]:
+  > After logging in via Microsoft SSO, our users are redirected to a blank screen. We see no errors client-side, but users are unable to access their dashboard.
+
+#### Internal Comments:
+- [Support Agent: Lila, 2024-05-12]:
+  > Possible issue with redirect URI or session cookie. Forwarding to engineering.
+
+- [Alice W., Engineering, 2024-05-13]:
+  > Looks related to recent changes in OAuth callback handler (see PR #456). The redirect URI might not be whitelisted for Acme’s tenant.
+
+#### Resolution Plan:
+Hold until PR #456 is merged and deployed. Ensure `OAUTH_REDIRECT_URI` includes Acme’s enterprise domain.

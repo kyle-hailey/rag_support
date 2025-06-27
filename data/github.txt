@@ -1,0 +1,26 @@
+### Source: GitHub
+### PR: #456
+### Title: Add OAuth2 login flow to user auth
+### Author: Bob D.
+### Branch: feature/oauth-login
+### Created: 2024-05-08
+### Status: Open (Pending Review)
+
+#### Summary:
+Implements OAuth2 login functionality for the web portal. Supports Google and Microsoft SSO.
+
+#### Files Changed:
+- auth/routes/login.js
+- auth/oauth/callback_handler.js
+- config/oauth_config.json
+
+#### Review Comments:
+- [Carol M., 2024-05-09]: Please verify that the `redirect_uri` is restricted to company-approved domains.
+- [SecurityBot, 2024-05-10]: Missing scope limitation on Microsoft login.
+- [Alice W., 2024-05-11]: Looks good to me, pending security sign-off.
+
+#### Linked Jira Ticket:
+- ABC-123
+
+#### Notes:
+Pending final approval from security team. Will unblock ABC-123 upon merge.

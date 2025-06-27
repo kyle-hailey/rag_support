@@ -1,0 +1,22 @@
+### Source: Jira
+### Ticket ID: ABC-123
+### Title: Add OAuth2 Login to Web Portal
+### Status: Blocked
+### Created: 2024-05-07
+### Updated: 2024-05-14
+### Assignee: Alice W.
+
+#### Description:
+As a user, I want to log in using OAuth2 so I can authenticate with my existing enterprise credentials.
+
+#### Comments:
+- [2024-05-07] Alice W.: Initial implementation complete, but blocked waiting for OAuth configuration from auth team.
+- [2024-05-09] Carol M.: Security team has requested changes to the redirect URI policy. Waiting on review.
+- [2024-05-13] Bob D.: Linked GitHub PR #456 for reference. Pending merge.
+
+#### Dependencies:
+- PR #456 (OAuth flow implementation)
+- Security team approval (OAuth redirect policy)
+
+#### Current Status:
+Blocked by security review. Cannot proceed with deployment until OAuth2 login is approved and merged.
