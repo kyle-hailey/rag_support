@@ -13,7 +13,8 @@ if not api_key:
 # Set OpenAI API key
 os.environ["OPENAI_API_KEY"] = api_key
 
-connection_string = "postgresql://yugabyte:Password123#@10.9.109.47:5433/yugabyte"
+connection_string = "postgresql://yugabyte:password@127.0.0.1:5433/yugabyte"
+
 
 # Try to connect and give feedback
 try:
